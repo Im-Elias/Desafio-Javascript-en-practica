@@ -34,34 +34,7 @@
             </div>
         </div>
     </div>
-    <script>
-        const valor1Input = document.getElementById('valor1');
-        const valor2Input = document.getElementById('valor2');
-        const resultadoSpan = document.querySelector('.resultado');
-        const btnSumar = document.getElementById('btn-sumar');
-        const btnRestar = document.getElementById('btn-restar');
-
-        function sumar() {
-            const valor1 = parseInt(valor1Input.value);
-            const valor2 = parseInt(valor2Input.value);
-            const resultado = valor1 + valor2;
-            mostrarResultado(resultado);
-        }
-
-        function restar() {
-            const valor1 = parseInt(valor1Input.value);
-            const valor2 = parseInt(valor2Input.value);
-            const resultado = valor1 - valor2;
-            mostrarResultado(resultado >= 0 ? resultado : 0);
-        }
-
-        function mostrarResultado(resultado) {
-            resultadoSpan.textContent = resultado;
-        }
-
-        btnSumar.addEventListener('click', sumar);
-        btnRestar.addEventListener('click', restar);
-    </script>
+    <script src="assets/js/script3.js"></script>
 </body>
 
 </html>
